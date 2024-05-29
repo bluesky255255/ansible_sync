@@ -40,7 +40,8 @@ from pyVim.connect import SmartConnect, Disconnect
 
 def main():
     try:
-        username = os.environ["VMWARE_USERNAME"]
+        username = os.environ["VMWARE_USER"]
+#        username = os.environ["VMWARE_USERNAME"]
         password = os.environ["VMWARE_PASSWORD"]
         host = os.environ["VMWARE_SERVER"]
     except KeyError as error:
