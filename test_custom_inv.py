@@ -18,4 +18,4 @@ output = {
     ]
   }
 }
-print(json.dumps(outpt))
+print(json.dumps(output))
