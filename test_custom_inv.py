@@ -43,7 +43,8 @@ def main():
         username = os.environ["VMWARE_USER"]
 #        username = os.environ["VMWARE_USERNAME"]
         password = os.environ["VMWARE_PASSWORD"]
-        host = os.environ["VMWARE_SERVER"]
+        host = os.environ["VMWARE_HOST"]
+#        host = os.environ["VMWARE_SERVER"]
     except KeyError as error:
         raise KeyError("Environment variables VMWARE_USERNAME, VMWARE_PASSWORD, and VMWARE_SERVER required") from error
     port = int(os.environ.get("VMWARE_PORT", "443"))
